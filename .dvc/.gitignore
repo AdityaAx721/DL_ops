@@ -1,0 +1,7 @@
+/config.local
+/tmp
+/cache
+
+artifacts
+artifacts\
+artifacts\data_ingestion

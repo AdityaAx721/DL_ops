@@ -216,3 +216,69 @@ x==========x]
 [2025-12-10 15:53:42,713: INFO: main: >>>>>> Evaluation completed <<<<<<
 
 x==========x]
+[2025-12-23 15:48:54,222: INFO: stage_01_data_ingestion: >>>> stage Data Ingestion stage started >>>>>]
+[2025-12-23 15:48:54,223: INFO: common: YAML file config/config.yaml loaded successfully]
+[2025-12-23 15:48:54,224: INFO: common: YAML file params.yaml loaded successfully]
+[2025-12-23 15:48:54,224: INFO: common: created directory at: artifacts]
+[2025-12-23 15:48:54,224: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-12-23 15:48:54,224: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2025-12-23 15:48:54,271: INFO: stage_01_data_ingestion: >>> stage Data Ingestion stage completed >>>>>
+
+ x======x]
+[2025-12-23 15:50:57,668: INFO: stage_02_prepare_base_model: *******************]
+[2025-12-23 15:50:57,668: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2025-12-23 15:50:57,669: INFO: common: YAML file config/config.yaml loaded successfully]
+[2025-12-23 15:50:57,670: INFO: common: YAML file params.yaml loaded successfully]
+[2025-12-23 15:50:57,670: INFO: common: created directory at: artifacts]
+[2025-12-23 15:50:57,670: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-12-23 15:50:57,798: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-23 15:50:57,830: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-23 15:50:57,856: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2025-12-23 15:50:59,952: INFO: stage_03_training: *******************]
+[2025-12-23 15:50:59,952: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2025-12-23 15:50:59,953: INFO: common: YAML file config/config.yaml loaded successfully]
+[2025-12-23 15:50:59,953: INFO: common: YAML file params.yaml loaded successfully]
+[2025-12-23 15:50:59,953: INFO: common: created directory at: artifacts]
+[2025-12-23 15:50:59,953: INFO: common: created directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2025-12-23 15:50:59,953: INFO: common: created directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2025-12-23 15:50:59,953: INFO: common: created directory at: artifacts/training]
+[2025-12-23 15:51:00,012: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-23 15:52:16,696: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-23 15:52:16,729: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-23 15:52:16,756: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-12-23 15:52:19,765: INFO: stage_04_evaluation: *******************]
+[2025-12-23 15:52:19,765: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-23 15:52:19,766: INFO: common: YAML file config/config.yaml loaded successfully]
+[2025-12-23 15:52:19,766: INFO: common: YAML file params.yaml loaded successfully]
+[2025-12-23 15:52:19,766: INFO: common: created directory at: artifacts]
+[2025-12-23 15:52:19,834: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-23 15:52:28,384: INFO: common: json file saved at: scores.json]
+[2025-12-23 15:52:28,384: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-23 16:32:42,817: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.94:8080]
+[2025-12-23 16:32:42,817: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-23 16:34:14,394: INFO: _internal: 127.0.0.1 - - [23/Dec/2025 16:34:14] "GET / HTTP/1.1" 200 -]
+[2025-12-23 16:34:14,634: INFO: _internal: 127.0.0.1 - - [23/Dec/2025 16:34:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-12-23 16:36:03,356: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.94:8080]
+[2025-12-23 16:36:03,356: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-23 16:36:06,279: INFO: _internal: 127.0.0.1 - - [23/Dec/2025 16:36:06] "GET / HTTP/1.1" 200 -]
+[2025-12-23 16:38:51,290: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.94:8080]
+[2025-12-23 16:38:51,290: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-12-23 16:38:53,403: INFO: _internal: 127.0.0.1 - - [23/Dec/2025 16:38:53] "GET / HTTP/1.1" 200 -]
+[2025-12-23 16:39:28,119: INFO: _internal: 127.0.0.1 - - [23/Dec/2025 16:39:28] "GET / HTTP/1.1" 200 -]
+[2025-12-23 16:40:00,182: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-23 16:40:00,424: INFO: _internal: 127.0.0.1 - - [23/Dec/2025 16:40:00] "POST /predict HTTP/1.1" 200 -]
