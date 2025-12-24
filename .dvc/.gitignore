@@ -18,3 +18,14 @@ artifacts/
 artifacts 
 
 artifacts\data_ingestion
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+
+# Data & models
+data/
+models/
+
+# OS junk
+.DS_Store
