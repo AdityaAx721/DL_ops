@@ -1,7 +1,20 @@
-/config.local
-/tmp
-/cache
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
 
-artifacts
-artifacts\
+# Virtual environments
+.venv
+
+.venv
+
+venv/ 
+
+
+artifacts/
+artifacts 
+
 artifacts\data_ingestion
